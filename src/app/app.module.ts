@@ -11,6 +11,9 @@ import { ContactComponent } from './contact/contact.component';
 import { LoginCoachComponent } from './login-coach/login-coach.component';
 import { RegisterCoachComponent } from './register-coach/register-coach.component';
 import { CoachCategorieListComponent } from './coach-categorie-list/coach-categorie-list.component';
+import { FormsModule } from '@angular/forms';
+import { CoachService } from './coach.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -26,9 +29,14 @@ import { CoachCategorieListComponent } from './coach-categorie-list/coach-catego
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [
+    HttpClientModule,
+    //CoachService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
