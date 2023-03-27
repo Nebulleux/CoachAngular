@@ -1,0 +1,55 @@
+{
+  "coach":
+  [
+    {
+      "id": 1,
+      "login": "admin",
+      "password": "admin",
+      "email": "admin-coach@coach.fr",
+      "categorie" : ""
+    },
+    {
+      "id": 2,
+      "login": "admin2",
+      "password": "admin2",
+      "email": "admin2-coach@coach.fr",
+      "categorie" : ""
+    },
+    {
+      "id": 3,
+      "login": "axel",
+      "password": "axel",
+      "email": "axel-coach@coach.fr",
+      "categorie" : ""
+    },
+    {
+      "id": 4,
+      "login": "JB",
+      "password": "JB",
+      "email": "JB-coach@coach.fr",
+      "categorie" : ""
+    },
+    {
+      "id": 5,
+      "login": "Loic",
+      "password": "Lc",
+      "email": "LC-coach@coach.fr",
+      "categorie": ""
+    }
+  ],
+    "categorie": 
+    [
+      {
+        "nom" : "cuisine"
+      },
+      {
+        "nom" : "esport" 
+      },
+      {
+        "nom" : "sport" 
+      },
+      {
+        "nom" : "bricolage" 
+      }
+    ]
+}
