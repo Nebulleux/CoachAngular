@@ -1,0 +1,37 @@
+/* Utilisation d'une couleur de fond vif pour la navbar */
+nav {
+    background-color: #ff0099;
+  }
+  
+  /* Utilisation de la propriété flex pour aligner les éléments de la navbar */
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Utilisation de couleurs vives pour les liens de la navbar */
+  nav a {
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  nav a:hover {
+    background-color: #e60073;
+    border-radius: 4px;
+  }
+  
+  /* Utilisation d'un style différent pour le lien actif de la navbar */
+  nav .active {
+    background-color: #fff;
+    color: #ff0099;
+    border-radius: 4px;
+    padding: 10px;
+  }
