@@ -5,6 +5,7 @@ import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
 import { LoginCoachComponent } from './login-coach/login-coach.component';
 import { RegisterCoachComponent } from './register-coach/register-coach.component';
+import { AuthGuard } from './auth.guard';
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
