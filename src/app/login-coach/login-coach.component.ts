@@ -13,7 +13,7 @@ export class LoginCoachComponent {
   constructor(private router: Router, private auth: AuthService) {}
   
   onLogin() {
-    this.auth.login();
-    this.router.navigateByUrl('/auth/login');
+    // this.auth.login();
+    this.router.navigateByUrl('/');
   }
 }
