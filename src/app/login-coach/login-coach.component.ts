@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./login-coach.component.css']
 })
 export class LoginCoachComponent {
-
+  onLogin() {
+    //this.auth.login();
+    //this.router.navigateByUrl('/');
+  }
 }
