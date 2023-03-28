@@ -12,7 +12,8 @@ const routes: Routes = [
   { path: 'auth/login', component: LoginCoachComponent},
   { path: 'contact', component: ContactComponent},
   { path: 'register', component: RegisterCoachComponent},
-  { path: 'coaches', component: CoachListComponent}
+  { path: 'coaches', component: CoachListComponent},
+  { path: 'coach-categorie', component: CoachListComponent}
 ];
 
 @NgModule({
