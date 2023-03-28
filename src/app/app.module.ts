@@ -11,6 +11,7 @@ import { LoginCoachComponent } from './login-coach/login-coach.component';
 import { RegisterCoachComponent } from './register-coach/register-coach.component';
 import { CoachCategorieListComponent } from './coach-categorie-list/coach-categorie-list.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   bootstrap: [AppComponent]
 })
