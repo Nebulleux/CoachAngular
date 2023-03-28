@@ -8,6 +8,8 @@ import { AuthService } from '../auth.service';
   styleUrls: ['./login-coach.component.css']
 })
 export class LoginCoachComponent {
+
+  
   constructor(private router: Router, private auth: AuthService) {}
   
   onLogin() {

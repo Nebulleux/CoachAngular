@@ -10,6 +10,7 @@ import { ContactComponent } from './contact/contact.component';
 import { LoginCoachComponent } from './login-coach/login-coach.component';
 import { RegisterCoachComponent } from './register-coach/register-coach.component';
 import { CoachCategorieListComponent } from './coach-categorie-list/coach-categorie-list.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -25,9 +26,8 @@ import { CoachCategorieListComponent } from './coach-categorie-list/coach-catego
   ],
   imports: [
     BrowserModule,
-   // AuthModule,
-    AppRoutingModule
-    
+    AppRoutingModule,
+    HttpClientModule
   ],
   bootstrap: [AppComponent]
 })

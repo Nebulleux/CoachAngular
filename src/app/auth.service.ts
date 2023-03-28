@@ -6,7 +6,7 @@ import { Coach } from 'src/classes/Coach';
   providedIn: 'root'
 })
 export class AuthService {
-  
+  private user: Coach | undefined;
   private token!: string;
   constructor(private http : HttpClient) { }
 
@@ -15,7 +15,12 @@ export class AuthService {
   login() {
     this.token = 'MyFakeToken';
     this.http.get<Coach[]>('http://localhost:3000/coach')
-    .subscribe(res => { const user = res.find((a: Coach)=>{ a.password == this.token && a.login == this.token })});
+    .subscribe(res => { 
+      this.user = res.find(
+        (a: Coach)=>{ a.password == this.token && a.login == this.token }
+      )
+    });
+    console.log(this.user);
   }
 
   getToken(): string {
