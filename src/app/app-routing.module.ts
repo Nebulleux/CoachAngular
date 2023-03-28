@@ -3,11 +3,12 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { CoachListComponent } from './coach-list/coach-list.component';
 import { ContactComponent } from './contact/contact.component';
+import { HomeComponent } from './home/home.component';
 import { LoginCoachComponent } from './login-coach/login-coach.component';
 import { RegisterCoachComponent } from './register-coach/register-coach.component';
 
 const routes: Routes = [
-  { path: '', component: AppComponent},
+  { path: '', component: HomeComponent},
   { path: 'auth/login', component: LoginCoachComponent},
   { path: 'contact', component: ContactComponent},
   { path: 'register', component: RegisterCoachComponent},
