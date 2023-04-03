@@ -12,6 +12,7 @@ import { CoachCuisineComponent } from './coach-cuisine/coach-cuisine.component';
 import { CoachSportComponent } from './coach-sport/coach-sport.component';
 import { CoachEsportComponent } from './coach-esport/coach-esport.component';
 import { CoachBricolageComponent } from './coach-bricolage/coach-bricolage.component';
+import { SearchComponent } from './search/search.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
@@ -24,7 +25,8 @@ const routes: Routes = [
   { path: 'coach-sport', component: CoachSportComponent},
   { path: 'coach-esport', component: CoachEsportComponent},
   { path: 'coach-bricolage', component: CoachBricolageComponent},
-  { path: 'add-post', component: AddPostComponent, canActivate:[AuthGuard]}
+  { path: 'add-post', component: AddPostComponent, canActivate:[AuthGuard]},
+  { path: 'recherche', component: SearchComponent}
 ];
 
 @NgModule({
