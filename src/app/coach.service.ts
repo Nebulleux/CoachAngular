@@ -7,7 +7,7 @@ import { Coach } from 'src/classes/Coach';
   providedIn: 'root'
 })
 export class CoachService {
-  list_lenght!: number
+  public list_lenght!: number
   constructor(private http: HttpClient) { }
 
   getCoach() : Observable<Coach[]> 
@@ -23,5 +23,10 @@ export class CoachService {
   getCoachById(id: number) : Observable<Coach> 
   {
     return this.http.get<Coach>('http://localhost:3000/coach/' + id);
+  }
+
+  addCoach(coach: Coach) 
+  {
+    this.http.post<Coach>('http://localhost:3000/coach/', coach).subscribe(data => {console.log("Ok")});
   }
 }

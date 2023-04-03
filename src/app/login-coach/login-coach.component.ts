@@ -9,11 +9,22 @@ import { AuthService } from '../auth.service';
 })
 export class LoginCoachComponent {
 
-  
-  constructor(private router: Router, private auth: AuthService) {}
+  public mdp: string;
+  public login: string;
+  constructor(private router: Router, private auth: AuthService) {
+    this.mdp = "";
+    this.login = "";
+  }
   
   onLogin() {
-    // this.auth.login();
-    this.router.navigateByUrl('/');
+    console.log(this.mdp)
+    console.log(this.login)
+
+    const result = this.auth.login(this.mdp, this.login);
+    console.log(result)
+    if(result)
+    {
+      this.router.navigateByUrl('/');
+    }
   }
 }
