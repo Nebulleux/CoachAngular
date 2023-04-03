@@ -19,6 +19,7 @@ import { CoachCuisineComponent } from './coach-cuisine/coach-cuisine.component';
 import { CoachBricolageComponent } from './coach-bricolage/coach-bricolage.component';
 import { CoachDetailsComponent } from './coach-details/coach-details.component';
 import { PostComponent } from './post/post.component';
+import { SearchComponent } from './search/search.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { PostComponent } from './post/post.component';
     CoachCuisineComponent,
     CoachBricolageComponent,
     CoachDetailsComponent,
-    PostComponent
+    PostComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,

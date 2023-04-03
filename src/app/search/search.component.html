@@ -1,0 +1,19 @@
+<form (ngSubmit)="onSubmit()">
+    <label>
+      <input type="radio" name="category" [(ngModel)]="selectedCategory" value="sport"> Sport
+    </label>
+    <br>
+    <label>
+      <input type="radio" name="category" [(ngModel)]="selectedCategory" value="esport"> Esport
+    </label>
+    <br>
+    <label>
+      <input type="radio" name="category" [(ngModel)]="selectedCategory" value="cuisine"> Cuisine
+    </label>
+    <br>
+    <label>
+      <input type="radio" name="category" [(ngModel)]="selectedCategory" value="bricolage"> Bricolage
+    </label>
+    <br>
+    <button type="submit">Rechercher</button>
+  </form>
