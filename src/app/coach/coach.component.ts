@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Coach } from 'src/classes/Coach';
+import { CoachService } from '../coach.service';
 
 @Component({
   selector: 'app-coach',
@@ -9,10 +10,14 @@ import { Coach } from 'src/classes/Coach';
 export class CoachComponent implements OnInit {
   @Input() coach! : Coach;
 
-  constructor() { }
+  constructor(private service: CoachService) { }
  
   ngOnInit(): void {
     
+  }
+
+  goToCoach(id : number) : void {
+    this.service.goToURL(id);
   }
 
 }

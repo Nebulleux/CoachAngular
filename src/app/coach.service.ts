@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Router } from '@angular/router';
 import { map, Observable } from 'rxjs';
 import { Coach } from 'src/classes/Coach';
 
@@ -8,7 +9,7 @@ import { Coach } from 'src/classes/Coach';
 })
 export class CoachService {
   public list_lenght!: number
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, private router: Router) { }
 
   getCoach() : Observable<Coach[]> 
   {
@@ -35,6 +36,10 @@ export class CoachService {
       .pipe(
         map((coaches: Coach[]) => coaches.filter((coach: { categorie: string; }) => coach.categorie === category))
       );
+  }
+
+  goToURL(id : number) : void {
+    this.router.navigate(['/coach', id]);
   }
   
 }

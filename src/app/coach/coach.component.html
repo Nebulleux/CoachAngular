@@ -4,6 +4,9 @@
         <ul class="list-group list-group-flush">
             <li class="list-group-item text-center">{{coach.email}}</li>
             <li class="list-group-item text-center">{{coach.categorie}}</li>
+            <li class="list-group-item text-center">
+                <button type="button" class="btn btn-success" (click)="goToCoach(coach.id)">Voir les annonces</button>
+            </li>
         </ul>
     </div>
 </div>

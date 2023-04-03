@@ -135,6 +135,22 @@
       "lieu": "Montbeliard",
       "date": "Dimanche 11h-15h",
       "categorie": "cuisine"
+    },
+    {
+      "idpost": 5,
+      "id": 9,
+      "coach": "tata",
+      "lieu": "CocaLand",
+      "date": "Dimanche 12h-15h",
+      "categorie": "cuisine"
+    },
+    {
+      "idpost": 6,
+      "id": 9,
+      "coach": "tata",
+      "lieu": "CacaLand",
+      "date": "Dimanche 13h-15h",
+      "categorie": "cuisine"
     }
   ]
 }

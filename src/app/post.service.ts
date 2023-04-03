@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { map, Observable } from 'rxjs';
 import { Post } from 'src/classes/Post';
 
 @Injectable({
@@ -29,5 +29,12 @@ export class PostService {
   addPost(coach: Post) 
   {
     this.http.post<Post>('http://localhost:3000/post/', coach).subscribe(data => {console.log("Ok")});
+  }
+
+  getPostByCoachId(coachId: number): Observable<Post[]> {
+    return this.http.get<Post[]>('http://localhost:3000/posts')
+      .pipe(
+        map((coaches: Post[]) => coaches.filter((posts: { id: number; }) => posts.id ==  coachId ))
+      );
   }
 }

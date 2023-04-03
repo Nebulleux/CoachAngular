@@ -17,6 +17,8 @@ import { CoachSportComponent } from './coach-sport/coach-sport.component';
 import { CoachEsportComponent } from './coach-esport/coach-esport.component';
 import { CoachCuisineComponent } from './coach-cuisine/coach-cuisine.component';
 import { CoachBricolageComponent } from './coach-bricolage/coach-bricolage.component';
+import { CoachDetailsComponent } from './coach-details/coach-details.component';
+import { PostComponent } from './post/post.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,9 @@ import { CoachBricolageComponent } from './coach-bricolage/coach-bricolage.compo
     CoachSportComponent,
     CoachEsportComponent,
     CoachCuisineComponent,
-    CoachBricolageComponent
+    CoachBricolageComponent,
+    CoachDetailsComponent,
+    PostComponent
   ],
   imports: [
     BrowserModule,
