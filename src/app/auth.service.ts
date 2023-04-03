@@ -28,6 +28,7 @@ export class AuthService {
     } 
     else
     {
+      localStorage.setItem('id', this.user.id.toString());
       this.token = true;
       return true;
     }
