@@ -26,6 +26,7 @@ nav {
   nav a:hover {
     background-color: #e60073;
     border-radius: 4px;
+    color: white;
   }
   
   /* Utilisation d'un style différent pour le lien actif de la navbar */
