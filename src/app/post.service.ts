@@ -21,12 +21,12 @@ export class PostService {
     this.getPost().subscribe(post => { this.list_lenght = post.length});
   }
 
-  getCoachById(id: number) : Observable<Post> 
+  getPostById(id: number) : Observable<Post> 
   {
     return this.http.get<Post>('http://localhost:3000/post/' + id);
   }
 
-  addCoach(coach: Post) 
+  addPost(coach: Post) 
   {
     this.http.post<Post>('http://localhost:3000/post/', coach).subscribe(data => {console.log("Ok")});
   }
