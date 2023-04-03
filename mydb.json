@@ -55,6 +55,34 @@
       "password": "",
       "email": "aaaa",
       "categorie": "sport"
+    },
+    {
+      "id": 9,
+      "login": "tata",
+      "password": "tata",
+      "email": "tata",
+      "categorie": "cuisine"
+    },
+    {
+      "id": 10,
+      "login": "gtgt",
+      "password": "gtgt",
+      "email": "gtg",
+      "categorie": "bricolage"
+    },
+    {
+      "id": 11,
+      "login": "e",
+      "password": "ze",
+      "email": "zeze",
+      "categorie": "cuisine"
+    },
+    {
+      "id": 12,
+      "login": "ze",
+      "password": "ze",
+      "email": "ze",
+      "categorie": "cuisine"
     }
   ],
   "categorie": [
@@ -75,40 +103,38 @@
       "nom": "bricolage"
     }
   ],
-  "posts" : 
-  [
+  "posts": [
     {
-      "idpost" : 1,
-      "id" : 1,
-      "coach" : "admin",
-      "lieu" : "Montbeliard",
-      "date" : "Tous les jeudis 18h-19h",
-      "categorie" : "sport"
+      "idpost": 1,
+      "id": 1,
+      "coach": "admin",
+      "lieu": "Montbeliard",
+      "date": "Tous les jeudis 18h-19h",
+      "categorie": "sport"
     },
     {
-      "idpost" : 2,
-      "id" : 3,
-      "coach" : "axel",
-      "lieu" : "Montbeliard",
-      "date" : "Tous les jours 16h-17h",
-      "categorie" : "sport"
+      "idpost": 2,
+      "id": 3,
+      "coach": "axel",
+      "lieu": "Montbeliard",
+      "date": "Tous les jours 16h-17h",
+      "categorie": "sport"
     },
     {
-      "idpost" : 3,
-      "id" : 1,
-      "coach" : "admin",
-      "lieu" : "Belfort",
-      "date" : "Week-end 1H 14h-15h",
-      "categorie" : "bricolage"
+      "idpost": 3,
+      "id": 1,
+      "coach": "admin",
+      "lieu": "Belfort",
+      "date": "Week-end 1H 14h-15h",
+      "categorie": "bricolage"
     },
     {
-      "idpost" : 4,
-      "id" : 3,
-      "coach" : "axel",
-      "lieu" : "Montbeliard",
-      "date" : "Dimanche 11h-15h",
-      "categorie" : "cuisine"
+      "idpost": 4,
+      "id": 3,
+      "coach": "axel",
+      "lieu": "Montbeliard",
+      "date": "Dimanche 11h-15h",
+      "categorie": "cuisine"
     }
   ]
-
 }

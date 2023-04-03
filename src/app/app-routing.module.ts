@@ -7,6 +7,11 @@ import { LoginCoachComponent } from './login-coach/login-coach.component';
 import { RegisterCoachComponent } from './register-coach/register-coach.component';
 import { AuthGuard } from './auth.guard';
 import { AddPostComponent } from './add-post/add-post.component';
+import { CoachCategorieListComponent } from './coach-categorie-list/coach-categorie-list.component';
+import { CoachCuisineComponent } from './coach-cuisine/coach-cuisine.component';
+import { CoachSportComponent } from './coach-sport/coach-sport.component';
+import { CoachEsportComponent } from './coach-esport/coach-esport.component';
+import { CoachBricolageComponent } from './coach-bricolage/coach-bricolage.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
@@ -14,7 +19,11 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent},
   { path: 'register', component: RegisterCoachComponent},
   { path: 'coaches', component: CoachListComponent},
-  { path: 'coach-categorie', component: CoachListComponent},
+  { path: 'coach-categorie', component: CoachCategorieListComponent},
+  { path: 'coach-cuisine', component: CoachCuisineComponent},
+  { path: 'coach-sport', component: CoachSportComponent},
+  { path: 'coach-esport', component: CoachEsportComponent},
+  { path: 'coach-bricolage', component: CoachBricolageComponent},
   { path: 'add-post', component: AddPostComponent, canActivate:[AuthGuard]}
 ];
 

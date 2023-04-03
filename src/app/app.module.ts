@@ -13,6 +13,10 @@ import { CoachCategorieListComponent } from './coach-categorie-list/coach-catego
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { AddPostComponent } from './add-post/add-post.component';
+import { CoachSportComponent } from './coach-sport/coach-sport.component';
+import { CoachEsportComponent } from './coach-esport/coach-esport.component';
+import { CoachCuisineComponent } from './coach-cuisine/coach-cuisine.component';
+import { CoachBricolageComponent } from './coach-bricolage/coach-bricolage.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +29,11 @@ import { AddPostComponent } from './add-post/add-post.component';
     LoginCoachComponent,
     RegisterCoachComponent,
     CoachCategorieListComponent,
-    AddPostComponent
+    AddPostComponent,
+    CoachSportComponent,
+    CoachEsportComponent,
+    CoachCuisineComponent,
+    CoachBricolageComponent
   ],
   imports: [
     BrowserModule,

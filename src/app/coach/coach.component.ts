@@ -1,10 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Coach } from 'src/classes/Coach';
 
 @Component({
   selector: 'app-coach',
   templateUrl: './coach.component.html',
   styleUrls: ['./coach.component.css']
 })
-export class CoachComponent {
+export class CoachComponent implements OnInit {
+  @Input() coach! : Coach;
+
+  constructor() { }
+ 
+  ngOnInit(): void {
+    
+  }
 
 }
