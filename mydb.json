@@ -75,12 +75,40 @@
       "nom": "bricolage"
     }
   ],
-  "coach_post" : [
+  "posts" : 
+  [
     {
+      "idpost" : 1,
       "id" : 1,
-      "id_coach" : 1
+      "coach" : "admin",
+      "lieu" : "Montbeliard",
+      "date" : "Tous les jeudis 18h-19h",
+      "categorie" : "sport"
+    },
+    {
+      "idpost" : 2,
+      "id" : 3,
+      "coach" : "axel",
+      "lieu" : "Montbeliard",
+      "date" : "Tous les jours 16h-17h",
+      "categorie" : "sport"
+    },
+    {
+      "idpost" : 3,
+      "id" : 1,
+      "coach" : "admin",
+      "lieu" : "Belfort",
+      "date" : "Week-end 1H 14h-15h",
+      "categorie" : "bricolage"
+    },
+    {
+      "idpost" : 4,
+      "id" : 3,
+      "coach" : "axel",
+      "lieu" : "Montbeliard",
+      "date" : "Dimanche 11h-15h",
+      "categorie" : "cuisine"
     }
-  ] 
-
+  ]
 
 }

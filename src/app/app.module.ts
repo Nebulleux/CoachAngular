@@ -12,6 +12,7 @@ import { RegisterCoachComponent } from './register-coach/register-coach.componen
 import { CoachCategorieListComponent } from './coach-categorie-list/coach-categorie-list.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { AddPostComponent } from './add-post/add-post.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { FormsModule } from '@angular/forms';
     ContactComponent,
     LoginCoachComponent,
     RegisterCoachComponent,
-    CoachCategorieListComponent
+    CoachCategorieListComponent,
+    AddPostComponent
   ],
   imports: [
     BrowserModule,
