@@ -1,1 +1,15 @@
-<p>search works!</p>
+<form (ngSubmit)="onSubmit()">
+    <label>
+      <input type="radio" name="category" [(ngModel)]="selectedCategory" value="sport"> Sport
+    </label>
+    <label>
+      <input type="radio" name="category" [(ngModel)]="selectedCategory" value="esport"> Esport
+    </label>
+    <label>
+      <input type="radio" name="category" [(ngModel)]="selectedCategory" value="cuisine"> Cuisine
+    </label>
+    <label>
+      <input type="radio" name="category" [(ngModel)]="selectedCategory" value="bricolage"> Bricolage
+    </label>
+    <button type="submit">Rechercher</button>
+  </form>
