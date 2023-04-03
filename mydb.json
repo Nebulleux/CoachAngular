@@ -70,5 +70,13 @@
     {
       "nom": "bricolage"
     }
-  ]
+  ],
+  "coach_post" : [
+    {
+      "id" : 1,
+      "id_coach" : 1
+    }
+  ] 
+
+
 }
