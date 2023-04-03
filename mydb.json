@@ -59,15 +59,19 @@
   ],
   "categorie": [
     {
+      "id": 1,
       "nom": "cuisine"
     },
     {
+      "id": 2,
       "nom": "esport"
     },
     {
+      "id": 3,
       "nom": "sport"
     },
     {
+      "id": 4,
       "nom": "bricolage"
     }
   ]

@@ -15,6 +15,11 @@ export class CategorieService {
     return this.http.get<Categorie[]>('http://localhost:3000/categorie');
   }
 
+  getCategorieById(id : number) : Observable<Categorie>
+  {
+    return this.http.get<Categorie>('http://localhost:3000/categorie/' + id);
+  }
+
   getListLenght()
   {
     this.getCategorie().subscribe(cat => { this.list_lenght = cat.length});
