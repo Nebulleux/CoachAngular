@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-coach-list',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./coach-list.component.css']
 })
 export class CoachListComponent {
+  constructor(private router: Router) {}
 
+  goToAnotherPage(page: string) {
+    this.router.navigate(['/' + page]);
+  }
 }
